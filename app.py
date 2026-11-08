@@ -217,9 +217,9 @@ def stats():
     print("got a stats request")
     return jsonify(
         {
-            "count": REQUESTS["count"],
-            "last_path": REQUESTS["last_path"],
-            "last_seconds": REQUESTS["last_seconds"],
+            "count": REQUESTS.count,
+            "last_path": REQUESTS.last_path,
+            "last_seconds": REQUESTS.last_seconds,
         }
     )
 
